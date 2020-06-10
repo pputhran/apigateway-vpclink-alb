@@ -4,4 +4,8 @@ import * as cdk from '@aws-cdk/core';
 import { NlbAlbStack } from '../lib/nlb-alb-stack';
 
 const app = new cdk.App();
-new NlbAlbStack(app, 'NlbAlbStack');
+new NlbAlbStack(app, 'APIG-vpc-nlb-alb', { 
+    env: {
+        region: "us-west-2"
+    }
+});
