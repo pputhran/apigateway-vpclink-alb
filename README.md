@@ -1,6 +1,6 @@
-# Welcome to your CDK TypeScript project!
+# API Gateway -> VPC Link (NLB) --> ALB --> EC2/ECS
 
-This is the same setup for Setup for APIGateway with VPCLink(NLB) to ALB into EC2
+This is the same setup for setup for APIGateway with VPCLink(NLB) to ALB into EC2
 
 Please update the following in the `nlb-alb-stack.ts` under `lib`
 
