@@ -12,8 +12,8 @@ const KEY_PAIR_NAME = "<>>" // update this in case you want to ssh
  // alternatively, you can use the Lambda function in this blog article
  // to have the NLB aut-register ALB IPs (when it changes)
  // https://aws.amazon.com/blogs/networking-and-content-delivery/using-static-ip-addresses-for-application-load-balancers/
-const ALB_IP1= "10.0.181.174" 
-const ALB_IP2= "10.0.218.17"
+const ALB_IP1= "" 
+const ALB_IP2= ""
 
 export class NlbAlbStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
