@@ -1,6 +1,8 @@
 # API Gateway -> VPC Link (NLB) --> ALB --> EC2/ECS
 
-This is the same setup for setup for APIGateway with VPCLink(NLB) to ALB into EC2
+This is a sample setup for APIGateway with VPCLink (NLB) to ALB into EC2. NLB, ALB and EC2 are all in private subnet.
+
+![Arch](./images/arch.png)
 
 Please update the following in the `nlb-alb-stack.ts` under `lib`
 
