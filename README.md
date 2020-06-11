@@ -14,16 +14,18 @@ This is a sample setup for APIGateway with VPCLink (NLB) to ALB into EC2. NLB, A
     const ALB_IP2= ""
     ```
 
-- You can get the ALB IPs but using the AWS Systems Manager Run Command
+- You can get the ALB IPs by using the AWS Systems Manager Run Command
     - Run Command
     - Choose `AWS-RunShellScript`
     - Command Parameters as `dig +short {internal-alb-dns}`
     - `Targets` - Choose instance manually and select `private-instance`
-    - Rests are all default
-    - Run and check the output
+    - Leave the rests as default
+    - Click Run and check the output
+
         ![Output](./images/output.png)
 
--  Update the ALB IPs and redeploy. This could also be automated using Systems Manager Automation or alternatively, you can use the Lambda function in this blog article to have the NLB aut-register ALB IPs (when it changes)
+-  Update the ALB IPs and redeploy. 
+> This could also be automated using Systems Manager Automation (*work in progress*) or alternatively, you can use the Lambda function from this blog article to have the NLB auto-register ALB IPs (when it changes)
     https://aws.amazon.com/blogs/networking-and-content-delivery/using-static-ip-addresses-for-application-load-balancers/
 
 
